@@ -40,9 +40,9 @@ COPY --from=build --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
 
-EXPOSE 53
+EXPOSE 3000
 
-ENV PORT=53
+ENV PORT=3000
 ENV DSTACK_SIMULATOR_ENDPOINT="http://host.docker.internal:8090"
 # server.js is created by next build from the standalone output
 # https://nextjs.org/docs/pages/api-reference/next-config-js/output
